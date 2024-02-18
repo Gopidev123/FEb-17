@@ -1,0 +1,149 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main p {
+
+            position: relative;
+            top: -300px;
+            left: 200px;
+            width: 200px;
+            height: 100px;
+            background-color: rgb(65, 54, 65);
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+            display: block;
+            border-radius: 10px;
+
+        }
+
+        input:checked:nth-of-type(2)~p {
+            transform: rotate(10deg);
+        }
+
+        input:checked:nth-of-type(3)~p {
+            transform: rotate(45deg);
+
+        }
+
+        input:checked:nth-of-type(4)~p {
+            transform: rotateX('45deg');
+        }
+
+        input:checked:nth-of-type(5)~p {
+            transform: rotateX(100deg);
+
+        }
+
+        input:checked:nth-of-type(6)~p {
+            transform: rotateY(45deg);
+        }
+
+        input:checked:nth-of-type(7)~p {
+            transform: rotateY(80deg);
+        }
+
+        input:checked:nth-of-type(8)~p {
+            transform: skew(20deg, 20deg);
+        }
+
+        input:checked:nth-of-type(9)~p {
+            transform: skew(30deg, 30deg);
+        }
+
+        input:checked:nth-of-type(10)~p {
+            transform: skewX(30deg);
+        }
+
+        input:checked:nth-of-type(11)~p {
+            transform: skewX(40deg);
+        }
+
+        input:checked:nth-of-type(12)~p {
+            transform: translate(20px,10px);
+        }
+
+        input:checked:nth-of-type(13)~p {
+            transform: translate(20px,20px);
+        }
+
+        input:checked:nth-of-type(14)~p {
+            transform: scale(2,2);
+        }
+
+        input:checked:nth-of-type(15)~p {
+            transform: scale(2,3);
+        }
+
+        input:checked:nth-of-type(16)~p {
+            transform: matrix(0.866,0.7,-0.8,0.866,0,0);
+        }
+
+        input:checked:nth-of-type(17)~p {
+            transform: matrix(0.586,0.8,-0.8,0.586,0,0);
+        }
+
+        input:checked:nth-of-type(18)~p {
+            transform: matrix(0.586,0.8,-0.8,0.586,40,30);
+        }
+
+        input:checked:nth-of-type(19)~p {
+            transform: skewY(40deg);
+        }
+
+        input:checked:nth-of-type(20)~p {
+            transform: skewY(40deg);
+        }/*
+        input{
+            background-color: rgb(12, 12, 12);
+            /* width: 300px; 
+        
+        }*/
+        
+        .main{
+            width: 700px;
+            height: 400px;
+            background-color: rgb(86, 104, 104);
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 40px;
+            margin: 10px auto;
+        }
+        input:hover{
+            background-color: rgb(124, 88, 37);
+            /* width: 100px; */
+            /* height: 20px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>CSS transform </h1>
+        <input type="radio" name="one">transform: none;<br>
+        <input type="radio" name="one">transform: rotate(10deg);<br>
+        <input type="radio" name="one">transform: rotate(45deg);<br>
+        <input type="radio" name="one" id="">transform: rotateX(45deg);<br>
+        <input type="radio" name="one">transform: rotateX(100deg);<br>
+        <input type="radio" name="one">transform: rotateY(45deg);<br>
+        <input type="radio" name="one">transform: rotateY(80deg);<br>
+        <input type="radio" name="one">transform: skew(20deg,20deg);<br>
+        <input type="radio" name="one">transform: skewX(30deg);<br>
+        <input type="radio" name="one">transform: skewX(40deg);<br>
+        <input type="radio" name="one">transform: skewY(30deg);<br>
+        <input type="radio" name="one">transform: skewY(40deg);<br>
+        <input type="radio" name="one">transform: translate(20px,10px);<br>
+        <input type="radio" name="one">transform: scale(2,2);<br>
+        <input type="radio" name="one">transform: scale(2,3);<br>
+        <input type="radio" name="one">transform: matrix(0.866,0.7,-0.8,0.866,0,0);<br>
+        <input type="radio" name="one">transform: matrix(0.586,0.8,-0.8,0.586,0,0);<br>
+
+        <p>different types of transforms</p>
+    </div>
+</body>
+
+</html>
